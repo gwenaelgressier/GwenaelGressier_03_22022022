@@ -278,7 +278,7 @@ header > a {
   margin: 0 0 -0.3rem 0;
 }
 .image--img {
-  height: 7rem;
+  height: 10rem;
   object-fit: cover;
   max-width: 100%;
   width: 100%;
@@ -325,6 +325,7 @@ header > a {
 .carte {
   display: block;
   gap: 1rem;
+  bottom: 1rem;
 }
 @media (min-width: 992px) {
   .carte {
@@ -425,6 +426,46 @@ header > a {
   color: white;
   text-align: center;
 }
+.carte__menu .anim-1 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.carte__menu .anim-2 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.carte__menu .anim-3 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.carte__menu .anim-4 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.carte__menu .anim-5 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.carte__menu .anim-6 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.carte__menu .anim-7 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.carte__menu .anim-8 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.carte__menu .anim-9 {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.carte__menu .anim-10 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
 
 .commander {
   text-align: center;
@@ -445,6 +486,7 @@ header > a {
   border-radius: 2rem;
   padding: 1rem 3rem;
   margin: 0 auto;
+  bottom: 1rem;
 }
 .commander > a:hover {
   filter: brightness(1.1);
@@ -461,55 +503,6 @@ header > a {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-}
-.anim-1 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.anim-2 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.anim-3 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.anim-4 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.anim-5 {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-.anim-6 {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.anim-7 {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-
-.anim-8 {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.anim-9 {
-  -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-}
-
-.anim-10 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

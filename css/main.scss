@@ -298,7 +298,7 @@ header {
 .image {
   margin: 0 0 -0.3rem 0;
   &--img {
-    height: 7rem;
+    height: 10rem;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
@@ -353,6 +353,7 @@ header {
 .carte {
   display: block;
   gap: 1rem;
+  bottom: 1rem;
 
   @media (min-width: 992px) {
     display: flex;
@@ -459,6 +460,56 @@ header {
         }
       }
     }
+
+    .anim-1 {
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s;
+    }
+
+    .anim-2 {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+
+    .anim-3 {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+
+    .anim-4 {
+      -webkit-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+    }
+
+    .anim-5 {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+
+    .anim-6 {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+    }
+
+    .anim-7 {
+      -webkit-animation-delay: 0.7s;
+      animation-delay: 0.7s;
+    }
+
+    .anim-8 {
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+    }
+
+    .anim-9 {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+    }
+
+    .anim-10 {
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+    }
   }
 }
 
@@ -477,11 +528,12 @@ header {
 
   > a {
     color: white;
-    background: #ff79da;
+    background: $secondaire-color;
     background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
     border-radius: 2rem;
     padding: 1rem 3rem;
     margin: 0 auto;
+    bottom: 1rem;
     &:hover {
       filter: brightness(1.1);
       box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
@@ -489,6 +541,7 @@ header {
     }
   }
 }
+
 /*Animation du défilement du menu*/
 @keyframes appear {
   0% {
@@ -499,54 +552,4 @@ header {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-}
-
-.anim-1 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.anim-2 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.anim-3 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.anim-4 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.anim-5 {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-.anim-6 {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.anim-7 {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-
-.anim-8 {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.anim-9 {
-  -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-}
-
-.anim-10 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
 }
