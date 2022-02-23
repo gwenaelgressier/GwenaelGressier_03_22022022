@@ -426,6 +426,31 @@ header > a {
   text-align: center;
 }
 
+.commander {
+  text-align: center;
+  margin-top: 3rem;
+}
+.commander .fas.fa-check-circle {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 1;
+}
+.commander > a {
+  color: white;
+  background: #ff79da;
+  background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+}
+.commander > a:hover {
+  filter: brightness(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
 /*Animation du défilement du menu*/
 @keyframes appear {
   0% {
