@@ -37,7 +37,7 @@ header h1 {
 
 /*section localisation*/
 .localisation {
-  background-color: #eaeaea;
+  background-color: #ececec;
   padding: 1rem;
 }
 .localisation a {
@@ -72,6 +72,75 @@ header h1 {
 .complement a:hover {
   filter: brightness(1.1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/*section fonctionnement*/
+.fonctionnement {
+  display: block;
+  align-items: center;
+}
+.fonctionnement__div {
+  max-width: 1440px;
+  margin: auto;
+}
+.fonctionnement__div h2 {
+  padding: 2rem 0 0 1.5rem;
+}
+.fonctionnement__div__derouler {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.fonctionnement__div__derouler li {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .fonctionnement__div__derouler li {
+    width: 30%;
+  }
+}
+.fonctionnement__div__derouler li a {
+  margin: 0;
+  background-color: #f6f6f6;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  height: 100%;
+}
+.fonctionnement__div__derouler li a:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement__div__derouler li a:hover .fonctionnement__div__derouler--ico {
+  color: #9356dc;
+  transition: color 0.3s;
+}
+@media (min-width: 768px) {
+  .fonctionnement__div__derouler li a {
+    margin-right: 1rem;
+  }
+}
+.fonctionnement__div__derouler--ico {
+  color: #979797;
+  margin: 0 1rem;
+}
+.fonctionnement__div__derouler--nombre {
+  height: 2rem;
+  width: 2rem;
+  background: #9356dc;
+  border-radius: 20px;
+  text-align: center;
+  position: absolute;
+  left: -1rem;
+  top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
