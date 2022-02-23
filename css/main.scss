@@ -278,10 +278,74 @@ header {
       color: white;
     }
     i {
-      padding-right: 1rem;
+      padding-right: 0.5rem;
     }
     .fa-hands-helping {
       font-size: 64%;
+    }
+  }
+}
+
+/******************************************************************************************* 
+***************************************     Menu     ***************************************
+*******************************************************************************************/
+
+header {
+  > a {
+    padding: 1rem;
+  }
+}
+.image {
+  margin: 0 0 -0.3rem 0;
+  &--img {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+  }
+}
+
+.main_menu {
+  background-color: $light-gray;
+  padding-bottom: 3rem;
+
+  &__titre {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    bottom: 1rem;
+    background-color: $light-gray;
+
+    > h1 {
+      padding: 1rem;
+      font-family: "Shrikhand", "sans-serif"; /*si probleme de dl passe en sans-serif*/
+      font-size: 150%;
+    }
+
+    &__coeur {
+      &:active {
+        .main_menu__titre__coeur--plein {
+          font-size: 1rem;
+          transition: all 0.5s;
+        }
+        .main_menu__titre__coeur--vide {
+          color: transparent;
+          transition: all 0.5s;
+        }
+      }
+
+      &--plein {
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 0rem;
+      }
     }
   }
 }
