@@ -9,6 +9,8 @@
   position: relative;
   margin: 0;
   list-style-type: none;
+  font-family: "Roboto", "sans-serif";
+  /*si probleme de dl passe en sans-serif*/
 }
 
 a {
@@ -44,8 +46,32 @@ header h1 {
   justify-content: center;
   align-items: center;
 }
-.localisation a h2 {
+.localisation a h4 {
   margin-left: 1rem;
+}
+
+/*section complement*/
+.complement {
+  background-color: #f6f6f6;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.complement h2 {
+  padding: 2.5rem 0 1.5rem 0;
+}
+.complement p {
+  margin-bottom: 3rem;
+}
+.complement a {
+  color: white;
+  background: #ff79da;
+  background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.complement a:hover {
+  filter: brightness(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 /*# sourceMappingURL=style.css.map */
