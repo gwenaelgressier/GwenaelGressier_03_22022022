@@ -29,8 +29,23 @@ header img {
   margin: 1rem auto;
   justify-content: center;
 }
-header .recensement {
+header h1 {
   display: none;
+}
+
+/*section localisation*/
+.localisation {
+  background-color: #eaeaea;
+  padding: 1rem;
+}
+.localisation a {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+}
+.localisation a h2 {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,11 @@
 /*import de mes font*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+
 /*declaration de mes variables*/
 $primaire-color: #9356dc;
 $secondaire-color: #ff79da;
 $tertiaire-color: #99e2d0;
+$gray: #eaeaea;
 
 /*general*/
 * {
@@ -30,7 +32,24 @@ header {
     margin: 1rem auto;
     justify-content: center;
   }
-  .recensement {
-    display: none; //bonne ou mauvaise idee de cacher mon h1 pour referencement
+  h1 {
+    display: none;
+  }
+}
+
+/*section localisation*/
+.localisation {
+  background-color: $gray;
+  padding: 1rem;
+
+  a {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      margin-left: 1rem;
+    }
   }
 }
