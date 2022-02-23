@@ -1,0 +1,36 @@
+/*import de mes font*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+/*declaration de mes variables*/
+$primaire-color: #9356dc;
+$secondaire-color: #ff79da;
+$tertiaire-color: #99e2d0;
+
+/*general*/
+* {
+  box-sizing: border-box; /*retire les margin et padding*/
+  padding: 0;
+  position: relative;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none; /*retire le surlignage*/
+}
+
+/*header*/
+header {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  box-shadow: 0 2px 4px #636363cc;
+  z-index: 2; //sinon shadow non visible
+  img {
+    margin: 1rem auto;
+    justify-content: center;
+  }
+  .recensement {
+    display: none; //bonne ou mauvaise idee de cacher mon h1 pour referencement
+  }
+}
