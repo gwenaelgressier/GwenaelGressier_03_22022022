@@ -13,18 +13,18 @@ $dark-gray: #353535;
 
 /*general*/
 * {
-  box-sizing: border-box; /*retire les margin et padding*/
+  box-sizing: border-box; /*prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur*/
   padding: 0;
   position: relative;
   margin: 0;
   list-style-type: none;
   font-family: "Roboto", "sans-serif"; /*si probleme de dl passe en sans-serif*/
+  a {
+    color: black;
+    text-decoration: none; /*retire le surlignage*/
+  }
 }
 
-a {
-  color: black;
-  text-decoration: none; /*retire le surlignage*/
-}
 /*loader*/
 .centre {
   display: flex;
@@ -238,8 +238,7 @@ header {
     ul {
       display: flex;
       flex-wrap: wrap;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      padding: 0 1.5rem 0 1.5rem;
       gap: 1rem;
       padding-bottom: 2rem;
       li {
@@ -459,7 +458,6 @@ header {
       padding: 1rem;
       margin-top: 1rem;
       overflow: hidden;
-      /*centré*/
       margin-right: auto;
       margin-top: 12px;
       -webkit-box-shadow: 0 5px 16px #0000002e;
@@ -594,6 +592,18 @@ header {
   }
 }
 
+/*Animation du défilement du menu*/
+@keyframes appear {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 .commander {
   text-align: center;
   margin-top: 3rem;
@@ -620,17 +630,5 @@ header {
       box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
         rgb(0 0 0 / 30%) 0px 18px 36px -18px;
     }
-  }
-}
-
-/*Animation du défilement du menu*/
-@keyframes appear {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
   }
 }
