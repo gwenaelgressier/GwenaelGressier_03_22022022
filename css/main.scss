@@ -295,6 +295,7 @@ header {
     padding: 1rem;
   }
 }
+
 .image {
   margin: 0 0 -0.3rem 0;
   &--img {
@@ -417,25 +418,34 @@ header {
         transition: 0.5s ease-in-out;
       }
 
-      &--nom {
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
       &__acc_prix {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
         max-width: 100%;
         overflow: hidden;
-        &--acc {
+
+        &__nom {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          &--titre {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: bold;
+          }
+          &--acc {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
         }
         &--prix {
           font-weight: bold;
+          justify-content: center;
+          display: flex;
+          align-items: center;
         }
       }
       &__cache {
