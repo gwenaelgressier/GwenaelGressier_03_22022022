@@ -20,6 +20,75 @@ a {
   /*retire le surlignage*/
 }
 
+/*loader*/
+.centre {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  color: white;
+  z-index: 3;
+  animation: fondu 2s 3s forwards;
+}
+.centre__anneau {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: anneau 2s linear infinite;
+}
+.centre__anneau:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.centre > span {
+  color: #737373;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  animation: text 3s ease-in-out infinite;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+@keyframes anneau {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #9356dc;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #99e2d0;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #ff79da;
+  }
+}
+@keyframes text {
+  50% {
+    color: black;
+  }
+}
 /*header*/
 header {
   align-items: center;
