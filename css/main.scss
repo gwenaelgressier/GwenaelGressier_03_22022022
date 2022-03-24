@@ -97,6 +97,15 @@ $dark-gray: #353535;
   }
 }
 
+/*sert a pousser mon footer en bas de page */
+.page {
+  min-height: 100vh; /* prend la hauteur de l'ecran */
+  display: flex;
+  flex-direction: column; /*mes mon header main et footer en collonne*/
+  main {
+    flex-grow: 1; /*dit a mon main de prendre toute la place libre*/
+  }
+}
 /*header*/
 header {
   align-items: center;
@@ -502,7 +511,6 @@ header {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-weight: bold;
           }
           &--acc {
             white-space: nowrap;
