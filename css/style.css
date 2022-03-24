@@ -452,9 +452,9 @@ header > a {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.carte__menu__plat:hover .carte__menu__plat__acc_prix {
-  width: calc(100% - 65px);
-  transition: width 0.5s ease-in-out;
+.carte__menu__plat:hover .carte__menu__plat__acc_prix--prix {
+  margin-right: 65px;
+  transition: margin-right 0.5s ease-in-out;
 }
 .carte__menu__plat:hover .carte__menu__plat__cache {
   transform: translateX(0px);
@@ -491,6 +491,8 @@ header > a {
   justify-content: center;
   display: flex;
   align-items: center;
+  transition-duration: 0.5s;
+  /*pour un retour en position normal en douceur */
 }
 .carte__menu__plat__cache {
   position: absolute;

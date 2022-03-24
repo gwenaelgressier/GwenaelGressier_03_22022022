@@ -481,9 +481,9 @@ header {
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
 
-      &:hover .carte__menu__plat__acc_prix {
-        width: calc(100% - 65px);
-        transition: width 0.5s ease-in-out;
+      &:hover .carte__menu__plat__acc_prix--prix {
+        margin-right: 65px;
+        transition: margin-right 0.5s ease-in-out;
       }
 
       &:hover .carte__menu__plat__cache {
@@ -523,6 +523,7 @@ header {
           justify-content: center;
           display: flex;
           align-items: center;
+          transition-duration: 0.5s; /*pour un retour en position normal en douceur */
         }
       }
       &__cache {
