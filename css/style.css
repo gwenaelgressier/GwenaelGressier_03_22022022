@@ -10,6 +10,7 @@
   position: relative;
   margin: 0;
   list-style-type: none;
+  /*retire les puces*/
   font-family: "Roboto", "sans-serif";
   /*si probleme de dl passe en sans-serif*/
 }
@@ -23,8 +24,11 @@
 .centre {
   display: flex;
   text-align: center;
+  /*'alignement horizontal*/
   justify-content: center;
+  /*element centre*/
   align-items: center;
+  /*element centre verticalement*/
   position: fixed;
   height: 100%;
   width: 100%;
@@ -32,7 +36,9 @@
   backdrop-filter: blur(3px);
   color: white;
   z-index: 3;
+  /*position du calque*/
   animation: fondu 2s 3s forwards;
+  /*pour l'animation fait apelle a mon keyframe fondu et commence a disparaitre entre 2 et 3sec*/
 }
 .centre__anneau {
   position: absolute;
@@ -40,10 +46,12 @@
   height: 200px;
   border-radius: 50%;
   animation: anneau 2s linear infinite;
+  /*pour l'animation fait apelle a mon keyframe anneau*/
 }
 .centre__anneau:before {
   position: absolute;
   content: "";
+  /*toujours metre un content vide a un after ou before*/
   left: 0;
   top: 0;
   height: 100%;
@@ -55,9 +63,12 @@
   color: #737373;
   font-size: 20px;
   text-transform: uppercase;
+  /*mes tout en majuscule*/
   letter-spacing: 1px;
+  /*espacement entre les lettre */
   line-height: 200px;
   animation: text 3s ease-in-out infinite;
+  /*pour l'animation fait apelle a mon keyframe text*/
 }
 
 @keyframes fondu {
@@ -115,6 +126,7 @@ header img {
 }
 header h1 {
   display: none;
+  /*sert a cacher mon homyfood mes un titre et necessaire pour le seo*/
 }
 
 /*section localisation*/
@@ -271,6 +283,7 @@ header h1 {
 .restaurant__conteneur__carte--img {
   height: 9rem;
   object-fit: cover;
+  /*maintien son ratio d'affichage tout en remplissant toute la boîte de contenu*/
   max-width: 100%;
   width: 100%;
   max-height: 100%;
@@ -316,7 +329,8 @@ header h1 {
   background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*préfixes vendeurs car est suporter pr firefox mais pas chrome */
+  color: transparent;
   opacity: 0;
 }
 
@@ -332,6 +346,7 @@ header h1 {
 .footer div img {
   padding: 1rem 0 1rem 0;
   filter: invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  /*j'applique un filtre sur mon img homyfood pour la rendre blanche*/
   width: 7rem;
 }
 .footer ul {
@@ -398,7 +413,8 @@ header > a {
   background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*préfixes vendeurs car est suporter pr firefox mais pas chrome */
+  color: transparent;
   opacity: 0;
 }
 
@@ -423,6 +439,9 @@ header > a {
     width: 30%;
   }
 }
+.carte__menu h2 {
+  /*positionnement des barre verte sous les h2*/
+}
 .carte__menu h2:after {
   content: "";
   width: 4rem;
@@ -440,16 +459,12 @@ header > a {
   overflow: hidden;
   margin-right: auto;
   margin-top: 12px;
-  -webkit-box-shadow: 0 5px 16px #0000002e;
   box-shadow: 0 5px 16px #0000002e;
   position: relative;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-name: appear;
   animation-name: appear;
-  -webkit-transform: scale(0);
+  /*fait apelle a la keyframe appear*/
   transform: scale(0);
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 .carte__menu__plat:hover .carte__menu__plat__acc_prix--prix {
@@ -473,16 +488,19 @@ header > a {
 }
 .carte__menu__plat__acc_prix__nom {
   white-space: nowrap;
+  /*ne va pas a la ligne*/
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .carte__menu__plat__acc_prix__nom--titre {
   white-space: nowrap;
+  /*ne va pas a la ligne*/
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .carte__menu__plat__acc_prix__nom--acc {
   white-space: nowrap;
+  /*ne va pas a la ligne*/
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -515,54 +533,42 @@ header > a {
   text-align: center;
 }
 .carte__menu .anim-1 {
-  -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 .carte__menu .anim-2 {
-  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 .carte__menu .anim-3 {
-  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 .carte__menu .anim-4 {
-  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 .carte__menu .anim-5 {
-  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 .carte__menu .anim-6 {
-  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 .carte__menu .anim-7 {
-  -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 .carte__menu .anim-8 {
-  -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 .carte__menu .anim-9 {
-  -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 .carte__menu .anim-10 {
-  -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
 /*Animation du défilement du menu*/
 @keyframes appear {
   0% {
-    -webkit-transform: scale(0);
     transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
