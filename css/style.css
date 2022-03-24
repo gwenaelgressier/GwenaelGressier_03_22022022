@@ -148,14 +148,14 @@ header h1 {
   display: block;
   align-items: center;
 }
-.fonctionnement__div {
+.fonctionnement__conteneur {
   max-width: 1440px;
   margin: auto;
 }
-.fonctionnement__div h2 {
+.fonctionnement__conteneur h2 {
   padding: 2rem 0 0 1.5rem;
 }
-.fonctionnement__div__derouler {
+.fonctionnement__conteneur__derouler {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -165,15 +165,15 @@ header h1 {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.fonctionnement__div__derouler li {
+.fonctionnement__conteneur__derouler li {
   width: 100%;
 }
 @media (min-width: 820px) {
-  .fonctionnement__div__derouler li {
+  .fonctionnement__conteneur__derouler li {
     width: 30%;
   }
 }
-.fonctionnement__div__derouler li a {
+.fonctionnement__conteneur__derouler li a {
   margin: 0;
   background-color: #f6f6f6;
   padding: 2rem;
@@ -181,23 +181,23 @@ header h1 {
   display: flex;
   height: 100%;
 }
-.fonctionnement__div__derouler li a:hover {
+.fonctionnement__conteneur__derouler li a:hover {
   background-color: #f2eafb;
 }
-.fonctionnement__div__derouler li a:hover .fonctionnement__div__derouler--ico {
+.fonctionnement__conteneur__derouler li a:hover .fonctionnement__conteneur__derouler--ico {
   color: #9356dc;
   transition: color 0.3s;
 }
 @media (min-width: 820px) {
-  .fonctionnement__div__derouler li a {
+  .fonctionnement__conteneur__derouler li a {
     margin-right: 1rem;
   }
 }
-.fonctionnement__div__derouler--ico {
+.fonctionnement__conteneur__derouler--ico {
   color: #979797;
   margin: 0 1rem;
 }
-.fonctionnement__div__derouler--nombre {
+.fonctionnement__conteneur__derouler--nombre {
   height: 2rem;
   width: 2rem;
   background: #9356dc;
@@ -216,46 +216,46 @@ header h1 {
 .restaurant {
   background-color: #f6f6f6;
 }
-.restaurant__div {
+.restaurant__conteneur {
   max-width: 1440px;
   margin: auto;
 }
-.restaurant__div h2 {
+.restaurant__conteneur h2 {
   padding: 2rem 0 1rem 1.5rem;
 }
-.restaurant__div ul {
+.restaurant__conteneur ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0 1.5rem 0 1.5rem;
   gap: 1rem;
   padding-bottom: 2rem;
 }
-.restaurant__div ul li {
+.restaurant__conteneur ul li {
   width: 90%;
   background-color: white;
   border-radius: 1rem;
   flex-grow: 1;
 }
 @media (min-width: 820px) {
-  .restaurant__div ul li {
+  .restaurant__conteneur ul li {
     width: 45%;
   }
 }
 @media (min-width: 992px) {
-  .restaurant__div ul li {
+  .restaurant__conteneur ul li {
     width: 20%;
   }
 }
-.restaurant__div__carte {
+.restaurant__conteneur__carte {
   display: block;
   height: 200px;
   border-radius: 1rem;
 }
-.restaurant__div__carte:hover {
+.restaurant__conteneur__carte:hover {
   filter: brightness(1.1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-.restaurant__div__carte--img {
+.restaurant__conteneur__carte--img {
   height: 9rem;
   object-fit: cover;
   max-width: 100%;
@@ -264,7 +264,7 @@ header h1 {
   border-radius: 1rem 1rem 0 0;
   position: relative;
 }
-.restaurant__div__carte--new {
+.restaurant__conteneur__carte--new {
   background: #99e2d0;
   color: #3b8468;
   position: absolute;
@@ -272,39 +272,39 @@ header h1 {
   right: 0.5rem;
   padding: 0.5rem;
 }
-.restaurant__div__carte--nom {
+.restaurant__conteneur__carte--nom {
   font-weight: bold;
   padding: 0.3rem 0.5rem 0 0.5rem;
 }
-.restaurant__div__carte--lieu {
+.restaurant__conteneur__carte--lieu {
   padding: 0 0 1rem 0.5rem;
 }
-.restaurant__div__carte span {
+.restaurant__conteneur__carte span {
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem;
 }
-.restaurant__div__carte span:active .restaurant__div__carte--plein {
-  font-size: 1rem;
+.restaurant__conteneur__carte span:hover .restaurant__conteneur__carte--plein {
+  opacity: 1;
   transition: all 0.5s;
 }
-.restaurant__div__carte span:active .restaurant__div__carte--vide {
+.restaurant__conteneur__carte span:hover .restaurant__conteneur__carte--vide {
   color: transparent;
   transition: all 0.5s;
 }
-.restaurant__div__carte--vide {
+.restaurant__conteneur__carte--vide {
   position: absolute;
   bottom: 0.8rem;
   left: -1.5rem;
 }
-.restaurant__div__carte--plein {
+.restaurant__conteneur__carte--plein {
   position: absolute;
   left: 0rem;
   background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0rem;
+  opacity: 0;
 }
 
 .footer {
@@ -370,23 +370,23 @@ header > a {
   /*si probleme de dl passe en sans-serif*/
   font-size: 150%;
 }
-.main_menu__titre__coeur:active .main_menu__titre__coeur--plein {
-  font-size: 1rem;
+.main_menu__titre__coeur:hover .main_menu__titre__coeur--plein {
+  opacity: 1;
   transition: all 0.5s;
 }
-.main_menu__titre__coeur:active .main_menu__titre__coeur--vide {
+.main_menu__titre__coeur:hover .main_menu__titre__coeur--vide {
   color: transparent;
   transition: all 0.5s;
 }
 .main_menu__titre__coeur--plein {
   position: absolute;
-  bottom: 0rem;
+  bottom: 0.1rem;
   right: 0rem;
   background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0rem;
+  opacity: 0;
 }
 
 .carte {

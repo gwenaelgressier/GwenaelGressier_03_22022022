@@ -162,7 +162,7 @@ header {
 .fonctionnement {
   display: block;
   align-items: center;
-  &__div {
+  &__conteneur {
     max-width: 1440px;
     margin: auto;
     h2 {
@@ -192,7 +192,7 @@ header {
 
           &:hover {
             background-color: $light-purple;
-            .fonctionnement__div__derouler--ico {
+            .fonctionnement__conteneur__derouler--ico {
               color: $primaire-color;
               transition: color 0.3s;
             }
@@ -228,7 +228,7 @@ header {
 /*restaurants*/
 .restaurant {
   background-color: $light-gray;
-  &__div {
+  &__conteneur {
     max-width: 1440px;
     margin: auto;
     h2 {
@@ -297,12 +297,12 @@ header {
         position: absolute;
         bottom: 0.5rem;
         right: 0.5rem;
-        &:active {
-          .restaurant__div__carte--plein {
-            font-size: 1rem;
+        &:hover {
+          .restaurant__conteneur__carte--plein {
+            opacity: 1;
             transition: all 0.5s;
           }
-          .restaurant__div__carte--vide {
+          .restaurant__conteneur__carte--vide {
             color: transparent;
             transition: all 0.5s;
           }
@@ -321,7 +321,7 @@ header {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 0rem;
+        opacity: 0;
       }
     }
   }
@@ -396,9 +396,9 @@ header {
     }
 
     &__coeur {
-      &:active {
+      &:hover {
         .main_menu__titre__coeur--plein {
-          font-size: 1rem;
+          opacity: 1;
           transition: all 0.5s;
         }
         .main_menu__titre__coeur--vide {
@@ -409,13 +409,13 @@ header {
 
       &--plein {
         position: absolute;
-        bottom: 0rem;
+        bottom: 0.1rem;
         right: 0rem;
         background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 0rem;
+        opacity: 0;
       }
     }
   }
