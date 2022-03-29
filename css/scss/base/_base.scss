@@ -1,0 +1,23 @@
+/*general*/
+* {
+  box-sizing: border-box; /*prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur*/
+  padding: 0;
+  position: relative;
+  margin: 0;
+  list-style-type: none; /*retire les puces*/
+  font-family: "Roboto", "sans-serif"; /*si probleme de dl passe en sans-serif*/
+  a {
+    color: black;
+    text-decoration: none; /*retire le surlignage*/
+  }
+}
+
+/*sert a pousser mon footer en bas de page */
+.page {
+  min-height: 100vh; /* prend la hauteur de l'ecran */
+  display: flex;
+  flex-direction: column; /*mes mon header main et footer en collonne*/
+  main {
+    flex-grow: 1; /*dit a mon main de prendre toute la place libre*/
+  }
+}

@@ -1,0 +1,28 @@
+//footer
+.footer {
+  background-color: $dark-gray;
+  color: white;
+  padding-left: 1.5rem;
+  div {
+    max-width: 1440px;
+    margin: auto;
+    img {
+      padding: 1rem 0 1rem 0;
+      filter: invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg)
+        brightness(104%) contrast(97%); /*j'applique un filtre sur mon img homyfood pour la rendre blanche*/
+      width: 7rem;
+    }
+  }
+  ul {
+    padding-bottom: 2rem;
+    a {
+      color: white;
+    }
+    i {
+      padding-right: 0.5rem;
+    }
+    .fa-hands-helping {
+      font-size: 64%;
+    }
+  }
+}

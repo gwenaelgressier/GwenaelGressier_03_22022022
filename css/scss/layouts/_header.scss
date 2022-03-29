@@ -1,0 +1,18 @@
+/*header*/
+header {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  box-shadow: 0 2px 4px #636363cc;
+  z-index: 2; //sinon shadow non visible
+  img {
+    margin: 1rem auto;
+    justify-content: center;
+  }
+  h1 {
+    display: none; /*sert a cacher mon homyfood mes un titre et necessaire pour le seo*/
+  }
+  > a {
+    padding: 1rem;
+  }
+}

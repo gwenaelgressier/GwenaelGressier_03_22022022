@@ -1,0 +1,254 @@
+/******************************************************************************************* 
+***************************************     Menu     ***************************************
+*******************************************************************************************/
+
+.image {
+  margin: 0 0 -0.3rem 0;
+  &--img {
+    height: 10rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+  }
+}
+
+.main_menu {
+  background-color: $light-gray;
+  padding-bottom: 3rem;
+
+  &__titre {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    bottom: 1rem;
+    background-color: $light-gray;
+
+    > h1 {
+      padding: 1rem;
+      font-family: "Shrikhand", "sans-serif"; /*si probleme de dl passe en sans-serif*/
+      font-size: 150%;
+    }
+
+    &__coeur {
+      &:hover {
+        .main_menu__titre__coeur--plein {
+          opacity: 1;
+          transition: all 0.5s;
+        }
+        .main_menu__titre__coeur--vide {
+          color: transparent;
+          transition: all 0.5s;
+        }
+      }
+
+      &--plein {
+        position: absolute;
+        bottom: 0.1rem;
+        right: 0rem;
+        background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
+        background-clip: text;
+        -webkit-background-clip: text; /*préfixes vendeurs car est suporter pr firefox mais pas chrome */
+        color: transparent;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.carte {
+  display: block;
+  gap: 1rem;
+  bottom: 1rem;
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+
+  &__menu {
+    width: 95%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding-top: 2rem;
+
+    @media (min-width: $desktop) {
+      width: 30%;
+    }
+
+    h2 {
+      /*positionnement des barre verte sous les h2*/
+      &:after {
+        content: "";
+        width: 4rem;
+        height: 0.3rem;
+        background-color: $tertiaire-color;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+      }
+    }
+
+    &__plat {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-top: 1rem;
+      overflow: hidden;
+      margin-right: auto;
+      margin-top: 12px;
+      box-shadow: 0 5px 16px #0000002e;
+      position: relative;
+      animation-duration: 1s;
+      animation-name: appear; /*fait apelle a la keyframe appear*/
+      transform: scale(0);
+      animation-fill-mode: both;
+
+      &:hover .carte__menu__plat__acc_prix--prix {
+        margin-right: 65px;
+        transition: margin-right 0.5s ease-in-out;
+      }
+
+      &:hover .carte__menu__plat__cache {
+        transform: translateX(0px);
+        transition: 0.5s ease-in-out;
+      }
+
+      &:hover .carte__menu__plat__cache--check {
+        transform: rotate(360deg);
+        transition: 0.5s ease-in-out;
+      }
+
+      &__acc_prix {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 100%;
+        overflow: hidden;
+
+        &__nom {
+          white-space: nowrap; /*ne va pas a la ligne*/
+          overflow: hidden;
+          text-overflow: ellipsis;
+          &--titre {
+            white-space: nowrap; /*ne va pas a la ligne*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          &--acc {
+            white-space: nowrap; /*ne va pas a la ligne*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        &--prix {
+          font-weight: bold;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          transition-duration: 0.5s; /*pour un retour en position normal en douceur */
+        }
+      }
+      &__cache {
+        position: absolute;
+        background-color: $tertiaire-color;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 65px;
+        border-radius: 0 1rem 1rem 0;
+        transform: translateX(66px);
+        overflow: hidden;
+        transition-duration: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--check {
+          font-size: 2rem;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+
+    .anim-1 {
+      animation-delay: 0.1s;
+    }
+
+    .anim-2 {
+      animation-delay: 0.2s;
+    }
+
+    .anim-3 {
+      animation-delay: 0.3s;
+    }
+
+    .anim-4 {
+      animation-delay: 0.4s;
+    }
+
+    .anim-5 {
+      animation-delay: 0.5s;
+    }
+
+    .anim-6 {
+      animation-delay: 0.6s;
+    }
+
+    .anim-7 {
+      animation-delay: 0.7s;
+    }
+
+    .anim-8 {
+      animation-delay: 0.8s;
+    }
+
+    .anim-9 {
+      animation-delay: 0.9s;
+    }
+
+    .anim-10 {
+      animation-delay: 1s;
+    }
+  }
+}
+
+/*Animation du défilement du menu*/
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.commander {
+  text-align: center;
+  margin-top: 3rem;
+
+  .fas.fa-check-circle {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 1;
+  }
+
+  > a {
+    color: white;
+    background: $secondaire-color;
+    background: linear-gradient(164deg, #ff79da 0%, #9356dc 80%);
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    bottom: 1rem;
+    &:hover {
+      filter: brightness(1.1);
+      box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
+        rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+    }
+  }
+}
