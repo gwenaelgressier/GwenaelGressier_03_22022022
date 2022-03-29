@@ -52,6 +52,7 @@
         -webkit-background-clip: text; /*préfixes vendeurs car est suporter pr firefox mais pas chrome */
         color: transparent;
         opacity: 0;
+        transition: all 0.5s;
       }
     }
   }
@@ -245,10 +246,13 @@
     padding: 1rem 3rem;
     margin: 0 auto;
     bottom: 1rem;
+    transition: 0.3s ease;
+
     &:hover {
       filter: brightness(1.1);
       box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
         rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+      transition: 0.3s ease;
     }
   }
 }

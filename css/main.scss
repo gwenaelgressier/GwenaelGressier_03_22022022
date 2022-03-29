@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 /*import de mon 7:1*/
 @import "./scss/utils/variables";
-@import "./scss/base/base.scss";
-@import "./scss/components/loader.scss";
-@import "./scss/layouts/header.scss";
-@import "./scss/layouts/footer.scss";
+@import "./scss/base/base";
+@import "./scss/components/loader";
+@import "./scss/layouts/header";
+@import "./scss/layouts/footer";
 @import "./scss/pages/pageIndex";
 @import "./scss/pages/pageRestaurant";
