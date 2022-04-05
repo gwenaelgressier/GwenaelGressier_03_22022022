@@ -36,7 +36,6 @@
     text-transform: uppercase; /*mes tout en majuscule*/
     letter-spacing: 1px; /*espacement entre les lettre */
     line-height: 200px;
-    animation: text 3s ease-in-out infinite; /*pour l'animation fait apelle a mon keyframe text*/
   }
 }
 
@@ -62,10 +61,5 @@
   100% {
     transform: rotate(360deg);
     box-shadow: 1px 5px 2px #ff79da;
-  }
-}
-@keyframes text {
-  50% {
-    color: black;
   }
 }
