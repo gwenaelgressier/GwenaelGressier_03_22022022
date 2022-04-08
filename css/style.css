@@ -440,6 +440,7 @@ header > a {
   }
 }
 .carte__menu h2 {
+  margin-bottom: 1.5rem;
   /*positionnement des barre verte sous les h2*/
 }
 .carte__menu h2:after {
@@ -522,7 +523,7 @@ header > a {
   border-radius: 0 1rem 1rem 0;
   transform: translateX(66px);
   overflow: hidden;
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -533,43 +534,45 @@ header > a {
   text-align: center;
 }
 .carte__menu .anim-1 {
-  animation-delay: 0.1s;
-}
-.carte__menu .anim-2 {
   animation-delay: 0.2s;
 }
+.carte__menu .anim-2 {
+  animation-delay: 0.4s;
+}
 .carte__menu .anim-3 {
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
 }
 .carte__menu .anim-4 {
   animation-delay: 0.4s;
 }
 .carte__menu .anim-5 {
-  animation-delay: 0.5s;
-}
-.carte__menu .anim-6 {
   animation-delay: 0.6s;
 }
-.carte__menu .anim-7 {
-  animation-delay: 0.7s;
-}
-.carte__menu .anim-8 {
+.carte__menu .anim-6 {
   animation-delay: 0.8s;
 }
+.carte__menu .anim-7 {
+  animation-delay: 1s;
+}
+.carte__menu .anim-8 {
+  animation-delay: 1.2s;
+}
 .carte__menu .anim-9 {
-  animation-delay: 0.9s;
+  animation-delay: 1.4s;
 }
 .carte__menu .anim-10 {
-  animation-delay: 1s;
+  animation-delay: 1.6s;
 }
 
 /*Animation du défilement du menu*/
 @keyframes appear {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(70px);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 .commander {
