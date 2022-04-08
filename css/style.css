@@ -543,25 +543,25 @@ header > a {
   animation-delay: 0.6s;
 }
 .carte__menu .anim-4 {
-  animation-delay: 0.4s;
-}
-.carte__menu .anim-5 {
-  animation-delay: 0.6s;
-}
-.carte__menu .anim-6 {
   animation-delay: 0.8s;
 }
-.carte__menu .anim-7 {
+.carte__menu .anim-5 {
   animation-delay: 1s;
 }
-.carte__menu .anim-8 {
+.carte__menu .anim-6 {
   animation-delay: 1.2s;
 }
-.carte__menu .anim-9 {
+.carte__menu .anim-7 {
   animation-delay: 1.4s;
 }
-.carte__menu .anim-10 {
+.carte__menu .anim-8 {
   animation-delay: 1.6s;
+}
+.carte__menu .anim-9 {
+  animation-delay: 1.8s;
+}
+.carte__menu .anim-10 {
+  animation-delay: 2s;
 }
 
 /*Animation du défilement du menu*/
